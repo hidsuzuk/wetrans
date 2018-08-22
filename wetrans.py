@@ -25,4 +25,6 @@ if __name__ == '__main__':
     while True:
         data = input("> ")
         japanese = is_japanese(data)
-        print(translate(data))
+        output = translate(data)
+        print(output)
+        getoutput("say {0}".format(output))
