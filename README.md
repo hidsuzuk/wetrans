@@ -4,16 +4,28 @@
     When you specify Japanese, it translate it into English.
     When you specify English, it translate it into Japanese.
 
-# settings
+# how to install
 
-    pip install googletrans
-    git clone git@github.com:hidsuzuk/wetrans.git
-    cd wetrans
+    $ git clone git@github.com:hidsuzuk/wetrans.git
+    $ cd wetrans
+    $ python setup.py sdist
+    $ pip install ./dist/wetrans-*.tar.gz
 
-# usage
+# how to uninstall
 
-    ./wetrans.py
-    > ランチに行きましょう 
+    $ pip uninstall wetrans
+
+# how to use
+
+    $ wetrans
+    > ランチに行きましょう
     Let's go to lunch
-    > Who have not gotten PayPay T-shirts yet? 
+    > Who have not gotten PayPay T-shirts yet?
     PayPayのTシャツをまだ手に入れていない人はいますか？
+
+# note 
+
+    $ pip install googletrans
+    $ git clone git@github.com:hidsuzuk/wetrans.git
+    $ cd wetrans
+    $ ./wetrans.py
