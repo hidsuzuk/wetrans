@@ -3,6 +3,9 @@
 import unicodedata
 from subprocess import getoutput
 from googletrans import Translator
+import signal
+import sys
+import subprocess
 
 class Translate:
 
@@ -17,9 +20,16 @@ class Translate:
             output = trans.translate(data, dest='ja').text
         return output
 
+def handler(signal, frame):
+    sys.exit(0)
+
 def main():
+    signal.signal(signal.SIGINT, handler)
     while True:
         data = input("> ")
+        if data == ':clear':
+            subprocess.call('clear')
+            continue
         t = Translate()
         output = t.translate(data)
         print(output)

@@ -22,6 +22,7 @@
     Let's go to lunch
     > Who have not gotten PayPay T-shirts yet?
     PayPayのTシャツをまだ手に入れていない人はいますか？
+    > :clear
 
 # note 
 
